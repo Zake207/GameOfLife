@@ -1,5 +1,5 @@
-import GameOfLife.UtilsGameOfLife as UtilsGameOfLife
-import MainProgram.UtilsAlgorithmHub as Utils
+import UtilsGameOfLife
+import Utils
     #                                               /// Main Window Configuration ///
 def GameOfLife() :
     Utils.root.title("Game of Life")

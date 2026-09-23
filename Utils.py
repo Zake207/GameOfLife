@@ -11,4 +11,3 @@ button_game_of_life = tk.Button(main_frame, text="Game of Life", width = 10, hei
 
 def ChangeFrame(frame) -> None:
     frame.tkraise()
-
