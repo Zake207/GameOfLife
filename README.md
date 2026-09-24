@@ -41,8 +41,6 @@ A continuación, instala las dependencias del proyecto:
 pip install -r requirements.txt
 ```
 
-**Importante:** no añadas `tkinter` al archivo `requirements.txt`, ya que no es una dependencia que deba instalarse mediante `pip`.
-
 ### Comprobación
 
 Para verificar que Python puede utilizar Tkinter desde el entorno virtual:
