@@ -48,6 +48,7 @@ def NextGen() -> None:
 
 def ClearLattice() -> None:
     main_lattice.Clear()
+    global gen_number 
     gen_number = 0
     gen_label.config(text = f"\nGEN: {gen_number}")
     for button in button_list:
@@ -96,7 +97,7 @@ instructions_of_the_game_label = tkinter.Label(help_frame, bg = "lightblue", tex
 title_instructions_of_the_game_label = tkinter.Label(help_frame, bg = "lightblue", text = "GAME OF LIFE", font = ("courier", 14, "bold"))
 # /// BUTTONS
 button_clear_lattice = tkinter.Button(initial_frame, text = "Clear", fg = "orange", bg = "lightgrey", width = 7, command = ClearLattice)
-button_menu = tkinter.Button(initial_frame, text = "Back To Menu", fg = "blue", bg = "lightgrey", command = ReturnToMainMenu)
+# button_menu = tkinter.Button(initial_frame, text = "Back To Menu", fg = "blue", bg = "lightgrey", command = ReturnToMainMenu)
 button_help = tkinter.Button(initial_frame, text = "Help", fg = "red", bg = "lightgrey", command = Help)
 button_next_gen = tkinter.Button(initial_frame, text = "Next Gen", fg = "green", bg = "lightgrey", width = 7, command = NextGen)
 button_help_return = tkinter.Button(help_frame, text = "Return", fg = "red", bg = "lightgrey", width = 7, command = lambda: Utils.ChangeFrame(initial_frame))

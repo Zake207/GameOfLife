@@ -18,11 +18,15 @@ def GameOfLife() :
     UtilsGameOfLife.button_help.pack()
     UtilsGameOfLife.button_help.place(relx=0.98, rely=0.98, anchor='se')
 
-    UtilsGameOfLife.button_menu.pack()
-    UtilsGameOfLife.button_menu.place(relx=0.02, rely=0.02, anchor='nw')
+    # UtilsGameOfLife.button_menu.pack()
+    # UtilsGameOfLife.button_menu.place(relx=0.02, rely=0.02, anchor='nw')
 
     UtilsGameOfLife.button_clear_lattice.pack()
     UtilsGameOfLife.button_clear_lattice.place(relx=0.02, rely=0.98, anchor='sw')
 
     UtilsGameOfLife.gen_label.pack()
     UtilsGameOfLife.gen_label.place(relx=0.925, rely=0.125, anchor='center')
+
+if __name__ == "__main__":
+    GameOfLife()
+    Utils.root.mainloop()
